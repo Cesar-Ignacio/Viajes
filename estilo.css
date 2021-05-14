@@ -1,0 +1,245 @@
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.header .logo {
+  background: #F5B7B1;
+  text-align: center;
+}
+
+.header .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #F1948A;
+}
+
+.header .nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+  margin: 0px;
+}
+
+.header .nav ul li {
+  padding: 10px;
+  display: inline-block;
+  -webkit-transition: linear 500ms;
+  transition: linear 500ms;
+}
+
+.header .nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.header .nav li:hover {
+  background: -webkit-gradient(linear, left bottom, left top, from(#AED6F1), to(#F5B7B1));
+  background: linear-gradient(to top, #AED6F1, #F5B7B1);
+  font-size: 15px;
+  -webkit-transition: linear 500ms;
+  transition: linear 500ms;
+}
+
+.header .nav .pinture img {
+  width: 100%;
+  height: 200px;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  /*.seccion{
+        margin-top: 5%;
+        padding: 20px;
+        border-top-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+        border-style: solid;
+        border-width: 5px;
+        border-color: rgb(134, 76, 55);
+        img{
+            width: 70px; 
+         }
+    }*/
+}
+
+.main .seccion.home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 3%;
+  padding: 20px;
+  border-top-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #864c37;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+  background-color: burlywood;
+}
+
+.main .seccion.home img {
+  width: 70px;
+}
+
+.main .seccion.home h2 {
+  text-align: center;
+}
+
+.main .seccion.home p {
+  text-align: justify;
+}
+
+.main .seccion.camping {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 3%;
+  padding: 20px;
+  border-top-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border-style: solid;
+  border-width: 5px;
+  border-color: green;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+  background-color: chartreuse;
+}
+
+.main .seccion.camping img {
+  width: 70px;
+}
+
+.main .seccion.camping h2 {
+  text-align: center;
+}
+
+.main .seccion.camping p {
+  text-align: justify;
+}
+
+.main .seccion.Hoteles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 3%;
+  padding: 20px;
+  border-top-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border-style: solid;
+  border-width: 5px;
+  border-color: blue;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+  background-color: cornflowerblue;
+}
+
+.main .seccion.Hoteles img {
+  width: 70px;
+}
+
+.main .seccion.Hoteles h2 {
+  text-align: center;
+}
+
+.main .seccion.Hoteles p {
+  text-align: justify;
+}
+
+.main .seccion.camping:hover {
+  padding: 10px;
+  margin-top: 1%;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+  border-radius: 10px;
+  background-image: url(imagenes/tienda.png);
+  background-size: 100% 100%;
+  color: white;
+}
+
+.main .seccion.camping:hover h2 {
+  padding: 2px;
+  background: rgba(37, 37, 36, 0.322);
+}
+
+.main .seccion.camping:hover p {
+  padding: 5px;
+  background: rgba(37, 37, 36, 0.322);
+}
+
+.main .seccion.home:hover {
+  padding: 10px;
+  margin-top: 1%;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+  border-radius: 10px;
+  background-image: url(imagenes/casa.png);
+  background-size: 100% 100%;
+  color: white;
+}
+
+.main .seccion.home:hover h2 {
+  padding: 2px;
+  background: rgba(37, 37, 36, 0.322);
+}
+
+.main .seccion.home:hover p {
+  padding: 5px;
+  background: rgba(37, 37, 36, 0.322);
+}
+
+.main .seccion.Hoteles:hover {
+  padding: 10px;
+  margin-top: 1%;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+  border-radius: 10px;
+  background-image: url(imagenes/hotel.png);
+  background-size: 100% 100%;
+  color: black;
+}
+
+.main .seccion.Hoteles:hover h2 {
+  padding: 2px;
+  background: rgba(37, 37, 36, 0.322);
+}
+
+.main .seccion.Hoteles:hover p {
+  padding: 5px;
+  background: rgba(37, 37, 36, 0.322);
+}
+/*# sourceMappingURL=estilo.css.map */
