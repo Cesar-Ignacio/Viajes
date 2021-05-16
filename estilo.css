@@ -70,18 +70,6 @@
           flex-direction: row;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  /*.seccion{
-        margin-top: 5%;
-        padding: 20px;
-        border-top-left-radius: 25px;
-        border-bottom-right-radius: 25px;
-        border-style: solid;
-        border-width: 5px;
-        border-color: rgb(134, 76, 55);
-        img{
-            width: 70px; 
-         }
-    }*/
 }
 
 .main .seccion.home {
@@ -241,5 +229,56 @@
 .main .seccion.Hoteles:hover p {
   padding: 5px;
   background: rgba(37, 37, 36, 0.322);
+}
+
+.footer {
+  background-color: #D4E6F1;
+  padding: 5px;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-color: cadetblue;
+  color: #245052;
+}
+
+.footer .punctuation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer .punctuation img {
+  width: 70px;
+}
+
+.footer .punctuation input {
+  display: none;
+}
+
+.footer .punctuation label {
+  color: white;
+  font-size: 20px;
+}
+
+.footer .punctuation label:hover {
+  color: yellow;
+}
+
+.footer .punctuation label:hover label:hover ~ label {
+  color: yellow;
+}
+
+.footer .punctuation input:checked ~ label {
+  color: yellow;
+}
+
+.footer .punctuation p {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+}
+
+.footer p {
+  border-radius: 10px;
+  padding: 5px;
+  background-color: #7FB3D5;
 }
 /*# sourceMappingURL=estilo.css.map */

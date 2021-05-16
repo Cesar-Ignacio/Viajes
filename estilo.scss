@@ -68,7 +68,6 @@
     img{
         width: 70px; 
         
-        
      }
     h2{
         text-align: center;
@@ -93,8 +92,6 @@
          p{
              padding: 5px;
             background: rgba(37, 37, 36, 0.322);
-
- 
          }
          color:$color;
          
@@ -106,19 +103,6 @@
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    
-    /*.seccion{
-        margin-top: 5%;
-        padding: 20px;
-        border-top-left-radius: 25px;
-        border-bottom-right-radius: 25px;
-        border-style: solid;
-        border-width: 5px;
-        border-color: rgb(134, 76, 55);
-        img{
-            width: 70px; 
-         }
-    }*/
 
     .seccion.home{
         @include seccion(rgb(134, 76, 55));
@@ -144,4 +128,50 @@
     .seccion.Hoteles:hover{
         @include hover(url(imagenes/hotel.png),black);
     }
+}
+
+.footer{
+     background-color:#D4E6F1;    
+     padding: 5px;
+     border-top-style: solid;
+     border-bottom-style: solid;
+     border-color:cadetblue;
+     color: rgb(36, 80, 82);
+    
+    .punctuation{
+        display: flex;
+        
+        img{
+             width:70px;
+         }
+        input{
+            display: none;//Le quitamos los circulos a los input
+        
+        }
+        label{
+            color:white;//color de la estrellas
+            font-size: 20px;
+        }
+        label:hover{
+            color: yellow;
+            label:hover ~ label{
+                color: yellow;
+            }
+        }
+
+        input:checked ~label{
+            color: yellow;
+        }        
+        p{
+            direction: rtl;///cambiamos la direccion
+            unicode-bidi: bidi-override;///se utiliza con la propiedad direction
+        }
+    }
+     
+     
+     p{
+         border-radius: 10px;
+         padding: 5px;
+         background-color:#7FB3D5 ;
+     }
 }
