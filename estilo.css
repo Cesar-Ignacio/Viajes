@@ -70,6 +70,8 @@
           flex-direction: row;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
+  -webkit-transition: all 800ms;
+  transition: all 800ms;
 }
 
 .main .seccion.home {
@@ -92,7 +94,13 @@
   background-color: burlywood;
 }
 
-.main .seccion.home img {
+.main .seccion.home .pinture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main .seccion.home .pinture img {
   width: 70px;
 }
 
@@ -124,7 +132,13 @@
   background-color: chartreuse;
 }
 
-.main .seccion.camping img {
+.main .seccion.camping .pinture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main .seccion.camping .pinture img {
   width: 70px;
 }
 
@@ -156,7 +170,13 @@
   background-color: cornflowerblue;
 }
 
-.main .seccion.Hoteles img {
+.main .seccion.Hoteles .pinture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main .seccion.Hoteles .pinture img {
   width: 70px;
 }
 
@@ -280,5 +300,23 @@
   border-radius: 10px;
   padding: 5px;
   background-color: #7FB3D5;
+}
+
+@media screen and (max-width: 700px) {
+  .main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-transition: all 800ms;
+    transition: all 800ms;
+  }
+  .main .pinture {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transition: all 500ms;
+    transition: all 500ms;
+  }
 }
 /*# sourceMappingURL=estilo.css.map */

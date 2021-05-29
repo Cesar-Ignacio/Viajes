@@ -65,10 +65,16 @@
     border-width: 5px;
     border-color:$colorB;
     transition: all 500ms; 
-    img{
-        width: 70px; 
+    .pinture{
         
-     }
+        display: flex;
+        
+        img{
+            width: 70px; 
+           
+         }
+    }
+   
     h2{
         text-align: center;
     }
@@ -99,10 +105,12 @@
         
 }
 .main{
-    
+   
+
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    transition: all 800ms;
 
     .seccion.home{
         @include seccion(rgb(134, 76, 55));
@@ -129,6 +137,8 @@
         @include hover(url(imagenes/hotel.png),black);
     }
 }
+
+
 
 .footer{
      background-color:#D4E6F1;    
@@ -174,4 +184,22 @@
          padding: 5px;
          background-color:#7FB3D5 ;
      }
+}
+
+
+@media screen and (max-width:700px)
+{
+    .main{
+        flex-direction:column;
+        transition: all 800ms;
+        .pinture{
+            justify-content: center;
+            transition: all 500ms;
+        }
+
+        
+    }
+   
+
+
 }
